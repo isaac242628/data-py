@@ -24,15 +24,18 @@ def verificar_Data(d, mm, aaa):
 
 
 def separando_Valor(data):
-    
     try:
         d, mm, aaa = map(int, data.split('/'))
     except: 
         return 'Erro'
+    else: 
+        verificar_Data(d, mm, aaa)
     
-    if not verificar_Data(d, mm, aaa):
-        return 'Data incorreta'
-    return f'{d} de {meses(mm)} de {aaa}'
+    if verificar_Data(d, mm, aaa):
+        response = verificar_Data(d, mm, aaa)
+        return response
+    else: 
+        return f'{d} de {meses(mm)} de {aaa}'
 
 data = input()
 print(separando_Valor(data))
