@@ -1,5 +1,5 @@
 # Construa uma função que receba uma data no formato DD/MM/AAAA e devolva uma string no formato D de mesPorExtenso de AAAA. 
-#Opcionalmente, valide a data e retorne NULL caso a data seja inválida.
+# Opcionalmente, valide a data e retorne NULL caso a data seja inválida.
 def meses(mm):
     mes = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
     return mes[mm - 1]
