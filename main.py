@@ -27,7 +27,7 @@ def separando_Valor(data):
     
     try:
         d, mm, aaa = map(int, data.split('/'))
-    except:
+    except: i
         return 'Erro'
     
     if not verificar_Data(d, mm, aaa):
